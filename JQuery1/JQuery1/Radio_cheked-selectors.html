@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').on('click',function(){ //  $(#btnSubmit).click(function(){
+                var rdoChecked = $('input[type="radio"]:checked');//set checked
+                if (rdoChecked.length > 0)
+                {
+                  //  $('#divResult').text(rdoChecked.length + " radio seleted");
+                    $('#divResult').text(rdoChecked.val() + " radio seleted");//lay value
+
+                } else {
+                    $('#divResult').text("No radio seleted");
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <br />
+    <label>
+        <input type="radio" name="gender" value="1" /> Male
+    </label>
+    <label>
+        <input type="radio" name="gender" value="0" />Female
+    </label> <!--name cua radio phai giong-->
+    <br />
+    <br />
+    <input type="button" id="btnSubmit" value="Submit" />
+    <div id="divResult"> </div>
+</body>
+</html>

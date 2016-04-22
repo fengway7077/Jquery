@@ -1,0 +1,10 @@
+E:\JQUERY\JQuery1\JQuery1\bin\JQuery1.dll.config
+E:\JQUERY\JQuery1\JQuery1\bin\JQuery1.dll
+E:\JQUERY\JQuery1\JQuery1\bin\JQuery1.pdb
+E:\JQUERY\JQuery1\JQuery1\obj\Debug\JQuery1.dll
+E:\JQUERY\JQuery1\JQuery1\obj\Debug\JQuery1.pdb
+E:\CSHARPDEMO\JQuery1\JQuery1\bin\JQuery1.dll.config
+E:\CSHARPDEMO\JQuery1\JQuery1\bin\JQuery1.dll
+E:\CSHARPDEMO\JQuery1\JQuery1\bin\JQuery1.pdb
+E:\CSHARPDEMO\JQuery1\JQuery1\obj\Debug\JQuery1.dll
+E:\CSHARPDEMO\JQuery1\JQuery1\obj\Debug\JQuery1.pdb

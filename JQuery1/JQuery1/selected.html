@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Làm việc với single select và multiple select</title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                var selected = $('#ddlSkills option:selected');
+               
+                if (selected.length > 0) {
+                    var result;
+                    //   $('#divResult').html('VALUE: ' + selected.val()  +  "  TEXT: "+ selected.text());
+                    selected.each(function () {
+                        result += 'value :' + $(this).val() + "Text" + $(this).val() +"<br>";
+                    });
+                    $('#divResult').html(result);
+                } else {
+                    $('#divResult').html('No selected');
+                }
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <br />
+    <!--<select id="ddlSkills">-->
+    <select id="ddlSkills" multiple>
+        <option> Choose language</option>
+        <option value="vi">Tieng Viet</option>
+        <option value="en">Tieng ANh</option>
+        <option value="jp">tieng nhat</option>
+        <option value="ch">Tieng trung</option>
+        <option value="kr">Tieng kr</option>
+    </select>
+    <hr /><br />
+    <input type="button" value="Submit" id="btnSubmit" />
+    <br /><br />
+    <div id="divResult"></div>
+</body>
+</html>

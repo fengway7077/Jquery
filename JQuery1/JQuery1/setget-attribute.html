@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .type1{ background-color:springgreen}
+    </style>
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btn1').click(function () {
+                $('#lbl1').text('Ket qua click 1')//gan
+            });
+            $('#btn2').click(function () {
+                alert($('#lbl1').text());//gan
+            });
+            $('#btn3').click(function () {
+           //     $('#lbl1').css('color', 'red');//giong 
+                $('#lbl1').attr('style', 'color:blue');
+
+                $('#txt1').val(' my test');//set
+                $('#lbl1').text($('#txt1').val());//get
+            });
+
+            $('#btn4').click(function () {
+                $('#link1').attr('href', 'https://www.facebook.com/');//set
+                $('#link1').addClass('type1'); // = voi $('#link1').attr('class', 'type1');
+               alert($('#link1').attr('href'));//get
+            });
+
+            $('#btn5').click(function () {
+                $('#spanProp').text($('#cb').prop('checked'));//tra ve true ,false
+                $('#spanAttr').text($('#cb').attr('checked'));// tra ve gia tri checked
+             //   alert($('#cb').val());
+            //    alert($('#div1').html());
+            //    alert($('#div1').text());
+                $('#cb').prop('checked', false);//= voi $('#cb').removeAttr('checked');
+            });
+        });
+    </script>
+</head>
+<body>
+    <label id="lbl1"> </label><br />
+    <hr />
+    <input type="text" id="txt1" />
+    <button id="btn1"> Click here</button>
+    <button id="btn2"> Get Click </button>
+    <button id="btn3">Change Color </button>
+    <hr />
+    
+    <a href="#" id="link1">Link</a>
+  <button id="btn4">Cilck me</button>
+    <hr />
+
+    <input type="checkbox" id="cb" checked="checked" value="1234124234" />
+    <div id="div1">
+        <span id="spanProp">span Prop</span><br />
+        <span id="spanAttr">span Attr </span>
+    </div>
+    <button id="btn5"> Click ME</button>
+</body>
+</html>

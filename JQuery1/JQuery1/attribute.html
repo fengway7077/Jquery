@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .my-border{
+            border:1px solid red;
+
+        }
+        .my-border1{
+            border:1px solid blue;
+
+        }
+    </style>
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          //  $('[title]').addClass('my-border');//gan classcss my-border cho tat ca div title
+          //  $('span[title]').addClass('my-border1');
+         //   $('[title="div2"]').addClass('my-border1');
+        // $('[title="div1"][style="background-color:yellow"]').addClass('my-border');
+        //    $('[title="div1"][style="background-color:yellow"],[title="div3"]').addClass('my-border1');
+       //     $('.demo4[title="div4"]').addClass('my-border');
+            //   alert($('.demo5[title="div5"]').data('id'));//lay gia tri id la 5
+         //   $('div[title != "div4"]').addClass('my-border');//lay ra cac element  co gia tri khac div4
+            // $('div[title $= "div6"]').addClass('my-border1');//tim div // giong   $('div[title $= "6"]').addClass('my-border1');//tim div
+           // $('div[title $= "6"]').addClass('my-border1');//tim div 
+            $('div[title *= "iv"]').addClass('my-border');
+        });
+    </script>
+</head>
+<body>
+    <div class="demo" title="div1" style="background-color:yellow">
+        <span title="abc"> This is first</span> 
+    </div>
+    <div class="demo" title="div2">
+        <span> This is second</span>
+    </div>
+    <div class="demo" title="div3">
+        <span> This is third</span>
+    </div>
+    <div class="demo4" title="div4">
+        <span> This is fourth</span>
+    </div>
+    <div class="demo5" title="div5" data-id="5">
+        <span> This is demo 5</span>
+    </div>
+    <div class="demo" title="div6">
+        <span> This is 6</span>
+    </div>
+    <div class="demo" title="div6">
+        <span> This is 6</span>
+    </div>
+</body>
+</html>

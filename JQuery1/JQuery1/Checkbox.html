@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#btnSubmit').on('click',function(){ //  $(#btnSubmit).click(function(){
+              var chkChecked = $('input[type="checkbox"]:checked');//set checked /1 thuoc tinh type
+              //  var chkChecked = $('input[type="checkbox"][name="skills"]:checked');//set checked /2 thuoc tinh type,name//type,name khong khoan trang
+                if (chkChecked.length > 0)
+                {
+                   //// $('#divResult').text(chkChecked.length + " checkbox(s) seleted");
+                    $('#divResult').html(chkChecked.length + " checkbox(s) seleted :  ");//dem gia tri check
+
+                    chkChecked.each(function () { //dung vong lap lay gia tri 
+                        $('#divResult').append($(this).val() + "</br>");//lay value
+                    });
+
+                } else {
+                    $('#divResult').text("No checkbox seleted");
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <br />
+    <label>
+        <input type="checkbox"  value="c#"  name="skills" /> C#
+    </label><br />
+    <label>
+        <input type="checkbox"  value="java" name="skills"/>JAVA
+    </label><br />
+    <label>
+        <input type="checkbox"  value="c++" name="skills"/>C++
+    </label>
+    <br />
+    <label>
+        <input type="checkbox"  value="php" name="skills"/>PHP
+    </label>
+    <br />
+    <br />
+    <input type="button" id="btnSubmit" value="Submit" />
+    <div id="divResult"> </div>
+</body>
+</html>

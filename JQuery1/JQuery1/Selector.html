@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#button').click(function () {
+                alert('OK');
+                $('#button').css('background-color', 'yellow');
+            });
+            document.getElementById('button').style.backgroundColor = "red";//khong jquery // la dom
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var btn = $('#button2');
+
+            if (btn.length > 0) { //kiem tra co btn id ko
+                alert('element found');
+            } else {
+                alert('element not found');
+            }
+
+              btn.click(function () {
+                alert('OK btn');
+               btn.css('background-color', 'blue');
+            });
+            
+        });
+    </script>
+
+</head>
+<body>
+    <button id="button"> click here</button>
+   <br />
+    <button id="button2">click me</button>
+</body>
+</html>

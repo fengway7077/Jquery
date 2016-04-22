@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //   alert($('li').text());
+
+            //$('li').each(function () {
+            //    alert($(this).text());
+            //});
+
+            //$('li').each(function (index,element) { //tri cap vitri ,phan tu
+            //    // alert($(element).text());
+            //    alert('index:'+ index + ".element:" + $(element).text());
+            //});
+
+            //$('li').each(function (index, element) { //tri cap vitri ,phan tu
+            //    if ($(this).text() == 'China')
+            //    {
+            //        return false;//ngan dong lap
+            //    }
+            //    $(this).css('color', 'red');
+               
+            //});
+
+            //  $('li').css('color', 'blue');
+
+            //var result = '';
+            //$('li').each(function (index, element) {
+            //    //  $('#result').html($('#result').html() + "<br>" + $(this).text());//chay cham khong nen
+            //    result += $(this).text()+ '<br>';
+            //});
+            //$('#result').html(result);
+
+            //method chaining
+            $('li').css('color', 'red');//
+          $('li').slideUp(1000);//
+          $('li').slideDown(1000);// 
+          ////  $('li').slideToggle(1000);
+            $('li').attr("title", "ok");//
+           // thu gon $('li').css('color', 'red').slideUp(1000).slideDown(1000).attr("title", "ok");
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li>US </li>
+    <li>EngLand </li>
+    <li>China </li>
+    <li>Russia </li>
+    <li>Thaid </li>
+    <li>Japan </li>
+
+</ul>
+    <br />
+    <div id="result"></div>
+</body>
+</html>

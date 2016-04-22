@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+   <style>
+        .abc{
+            background-color:aqua;
+    }
+   </style>
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           // alert($('div a').length); //dem the a nam trong div, kq=1
+          //  alert($('a').length); //dem the a ,kq=2
+         //   alert($('table').length);//lay table, kq 1
+         //   alert($('table').html());//lay noi dung bang
+         //   alert($('table').text());//lay noi dung 
+            //$('table').css('background-color', "blue");//set mau cho bang mau blue
+            //$('table,a,div').css('background-color', "pink");//set cho nhieu the mau pink
+            //   $('table tr').css('background-color', "red");//set tr trong table
+
+         //   $('table tr:even').css('background-color', "red");//set mau chan//set chung cho table
+       //     $('table tr:odd').css('background-color', "green");//set mau le
+
+          //  $('#tbl3 tr:even').css('background-color', "yellow");//set mau chan /set rieng theo id
+        //    $('#tbl3 tr:odd').css('background-color', "green");//set mau le
+
+
+          //  $('#tbl3 tr td:even').css('background-color', "yellow");//set mau chan /set rieng theo id
+         //   $('#tbl3 tr td:odd').css('background-color', "green");//set mau le
+
+            //$('table tr').each(function () { //lay ra cac td table//coment table2,table3 de xem kq
+            //    alert($(this).html())
+            //});
+
+            //$('table tr').each(function () {
+            //    if($(this).find('td:first').text() == 'ADO.NET')
+            //    alert($(this).html())
+            //});
+
+            //$('table tr:last').each(function () {// co the thyay last,first,even,odd
+             
+            //        alert($(this).html())
+            //});
+
+            //alert($('ul').html())
+            //alert($('ul li').html())
+          //  alert($('ul li:last').html())// kq select 4
+            alert($('ul li:last').addClass('abc'));//set css abc vi tri last
+
+
+        });
+    </script>
+</head>
+<body>
+    <table id="tbl1" border="1">
+        <tr>
+            <td>C#</td>
+            <td>PHP</td>
+            <td>JAVA</td>
+            
+        </tr>
+        <tr>
+            <td>ADO.NET</td>
+            <td>JQUERY</td>
+            <td>JAVAsCRIPT</td>
+            <td>ajax</td>
+        </tr>
+        <tr>
+            <td>MS SQL</td>
+            <td>My SQL</td>
+            <td>PosgreSQL</td>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>css</td>
+            <td>jsp</td>
+        </tr>
+    </table>
+    <br />
+    <!--<table id="tbl2 " border="1">
+        <tr>
+            <td>fdgdf</td>
+            <td>hjgh</td>
+        </tr>
+        <tr>
+            <td>55555</td>
+            <td>55555</td>
+        </tr>
+    </table>
+    <br />
+    <table id="tbl3" border="1">
+        <tr>
+            <td>444444444</td>
+            <td>333333333</td>
+            <td>555555555</td>
+        </tr>
+        <tr>
+            <td>555555555</td>
+            <td>7777777777</td>
+            <td>555555555</td>
+        </tr>
+    </table>
+    <br />-->
+    <ul>
+        <li> select 1</li>
+        <li> select 2</li>
+        <li> select 3</li>
+        <li> select 4</li>
+    </ul>
+    <div>
+        <a href="http://learn.jquery.com/using-jquery-core/selecting-elements/">Jquery tham khao </a>
+    </div>
+    <a href="http://google.com.vn/"> google</a>
+</body>
+</html>

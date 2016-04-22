@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById('btn1');
+            btn.addEventListener('click', clickhere);
+        }
+        function clickhere() {
+            alert('OK');
+        }
+    </script>
+    <!--su dung jquery-->
+    <script src="Script/jquery-2.2.1.js"></script><!--//su sung jquery  thi cac file .js phai nhung phai duoi-->
+    <script>
+        jQuery(document).ready(function () { //$(function () { -cach viet tat -//doan script chay sao khi load ra,neu khong co (document).read thi dat ben duoi
+            jQuery('#btn2').click(function () {/// co the thay tat ca jQuery thanh dau $ ngan gon
+                alert('ok btn2 jquery');
+            });
+        });//
+     
+    </script>
+</head>
+<body>
+    <br />
+    <button id="btn1">Click here</button> <br />
+    ---su dung jquery
+    <hr />
+    <button id="btn2">Click here</button>
+    <br />
+    <hr />
+    <button id="btn3">Click here</button>
+    <script src="Script/btn3.js"></script>
+</body>
+</html>

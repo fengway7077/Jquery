@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Script/jquery-2.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('span.small').css('border', '1px solid yellow');//lay the span trong class small
+          $('#first .small').css('border', '1px solid pink');//lay class trong id
+        $('.small.test').css('border', '1px solid green');//lay class co 2 name
+             $('.small .test2').css('border', '1px solid blue');//lay class div small co class con test2
+             $('.big1').filter('.small').css('border', '1px solid red');//lay ra big2 co small
+            // $('.big1').find('.small').css('border', '1px solid green');//tim tat ca small nam trong big1
+           //  $('.big1:last').filter('.small').css('border', '1px solid red');//cuoi
+        });
+    </script>
+</head>
+<body>
+    <div id="first" class="big"> <span class="small">This is class selector</span></div><br />
+    
+    <div class="small test"><p>This is class selector 2 </p></div><br />
+    <div class="small"><p class="test2">This is class selector 22 </p></div><br />
+    <div class="small"> <div class="xsamll">This is class selector 3</div></div><br />
+
+    <div class="big1 "> <span class="small">This is class selector121 </span></div><br />
+    <div class="big1 small"> <span class="small">This is class selector12 </span></div>
+    
+
+</body>
+</html>
